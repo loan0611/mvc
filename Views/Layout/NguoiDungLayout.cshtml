@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/CssLayoutNguoiDung/fonts.css" rel="stylesheet" />
+    <link href="~/Content/CssLayoutNguoiDung/global.css" rel="stylesheet" />
+</head>
+<body>
+    @RenderBody()
+    <div id="MainHolder">
+        <div id="TOP">
+            <img src="~/Content/Images/logo.png" @*alt="Loan Detective"*@ width="150" height="150" /></div>
+        <div id="TOP-Menu">
+            <div id="TOP-Message">
+                <a href="#"><input type="text" /></a>
+                <img src="~/Content/Images/1486481340_xmag.png" height="20" width="20">
+                <button class="button">Upload</button>
+                @Html.ActionLink("Đăng Ký", "DăngKy", null, htmlAttributes: new { @class = "DangKy" })
+                @Html.ActionLink("Đăng Nhập", "DăngNhap", null, htmlAttributes: new { @class = "DangNhap" })
+                
+            </div>
+        </div>
+        @*<div id="TOP-SubMenu">
+            <p>Licenced under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">Creative Commons Attribution-Noncommercial-Share Alike 2.0 UK</a></p>
+        </div>*@
+        
+        <div id="Content-Holder">
+            <div id="Content-Left">
+                <h3>Submenu</h3>
+                <a href="http://all-free-download.com/free-website-templates/" class="submenu">Submenu</a> <a href="http://all-free-download.com/free-website-templates/" class="submenu">Submenu</a> <a href="http://all-free-download.com/free-website-templates/" class="submenu">Submenu</a> <a href="http://all-free-download.com/free-website-templates/" class="submenu">Submenu</a> <a href="http://all-free-download.com/free-website-templates/" class="submenu">Submenu</a> <a href="http://all-free-download.com/free-website-templates/" class="submenu">Submenu</a> <a href="http://all-free-download.com/free-website-templates/" class="submenu">Submenu</a>
+                <p>
+                    Integer nulla nulla, vulputate ac, mattis a, laoreet nec, dolor. Pellentesque commodo, quam ut dapibus varius, ante turpis rhoncus lacus, a iaculis dui sem et lectus. In hac habitasse platea dictumst. Nullam fermentum blandit nisi. Mauris ac libero. Proin sagittis. <a href="http://all-free-download.com/free-website-templates/">Quisque ornare nulla vitae tellus.</a> <br />
+                    <br />
+                    Login:<br />
+                    <input name="textfield" type="text" class="textinput" size="23" />
+                    <br />
+                    Pass:<br />
+                    <input name="textfield" type="text" class="textinput" size="23" />
+                    <br />
+                    <input type="button" class="button" value=" Login " />
+                </p>
+                <img src="images/menu-left-BG-bottom.gif" width="143" height="10" class="BottomIMG" alt="Loan Detective" />
+            </div>
+            <div id="Content-Right">
+                <div id="Banner">
+                    <h2>BIG H2 title</h2>
+                    <h3>smaller H3 title is here</h3>
+                </div>
+                <h4>Smaller H4 title is here</h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vel quam. In at massa quis leo pretium mattis. Aliquam orci leo, tempus a, ultricies vitae, aliquet ac, sapien. Fusce quis est. In posuere varius tellus. Mauris magna tortor, mollis nec, euismod id, scelerisque sed, erat. Donec mollis consequat odio. Aliquam ligula. Pellentesque tristique aliquet orci. Vivamus purus urna, pellentesque sit amet, ornare id, congue mattis, quam. Phasellus eleifend, lacus at iaculis placerat, nisl velit adipiscing enim, at gravida odio lacus id enim. Donec lascinia sagittis felis. Sed eu orci. Integer et diam. Donec aliquet auctor dolor. Nullam rhoncus, urna at mattis ultrices, est metus malesuada arcu, vitae pulvinar diam felis id metus. Sed eu quam et sapien blandit aliquet.</p>
+                <div class="MarketMessage1">Class aptent taciti sociosqu ad litora torquent per conubia nostra</div>
+                <div id="ThreeSlopes">
+                    <div id="SlopeOne">
+                        <h4>Lorem ipsum dolor sit amet</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vel quam. In at massa quis leo pretium mattis. Aliquam orci leo, tempus a, ultricies vitae, aliquet ac, sapien.</p>
+                        <p><img src="images/e03.gif" alt="Story Title" width="16" height="9" /> <a href="http://all-free-download.com/free-website-templates/">read more</a></p>
+                        <img src="images/slope-bottom.gif" alt="Lorem ipsum dolor sit amet" width="180" height="9" />
+                    </div>
+                    <div id="SlopeTwo">
+                        <h4>Lorem ipsum dolor sit amet</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vel quam. In at massa quis leo pretium mattis. Aliquam orci leo, tempus a, ultricies vitae, aliquet ac, sapien.</p>
+                        <p><img src="images/e03.gif" alt="Story Title" width="16" height="9" /> <a href="http://all-free-download.com/free-website-templates/">read more</a></p>
+                        <img src="images/slope-bottom.gif" alt="Lorem ipsum dolor sit amet" width="180" height="9" />
+                    </div>
+                    <div id="SlopeThree">
+                        <h4>Lorem ipsum dolor sit amet</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vel quam. In at massa quis leo pretium mattis. Aliquam orci leo, tempus a, ultricies vitae, aliquet ac, sapien.</p>
+                        <p><img src="images/e03.gif" alt="Story Title" width="16" height="9" /> <a href="http://all-free-download.com/free-website-templates/">read more</a></p>
+                        <img src="images/slope-bottom.gif" alt="Lorem ipsum dolor sit amet" width="180" height="9" />
+                    </div>
+                </div>
+            </div>
+            <div id="Footer">
+                <p>Copyright 2003-2006 &copy; <a href="http://www.empire-elements.co.uk/">Professional web design services</a> by Empire Elements All rights reserved | <a href="http://validator.w3.org/check?uri=referer">Validation service</a></p>
+            </div>
+        </div>
+    </div>
+    <div align=center>This template  downloaded form <a href='http://all-free-download.com/free-website-templates/'>free website templates</a></div>
+</body>
+</html>
